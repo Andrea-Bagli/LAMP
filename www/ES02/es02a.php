@@ -6,7 +6,7 @@ $passwd = $_POST['password'];
 if($username=="Mario" && $passwd=="123") {
   $msg = "Credenziali sbagliate";
 } else {
-  $msg = "Benvenuto $username nella pagina riservata del mio sito!";
+  $msg = "Benvenuto\a $username nella pagina riservata del mio sito!";
 }
 ?>
 
