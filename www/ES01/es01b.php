@@ -5,7 +5,7 @@
 </head>
 <body>
     <?php
-        $name = "Paolo";
+        $name = "Andrea";
 
        
         $today = new DateTime("now", new DateTimeZone('Europe/Rome'));
@@ -25,6 +25,5 @@
         $browser = $_SERVER['HTTP_USER_AGENT'];
 
         
-        echo "$greeting $name, benvenuta nella mia prima pagina PHP!<br>";
-        echo "Stai usando il browser: $browser";
+        echo "$greeting $name, benvenuto nella mia pagina<br>";
     ?>
