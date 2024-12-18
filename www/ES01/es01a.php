@@ -6,11 +6,11 @@
 
 <?php 
 echo '<table border="1">'; 
-for($i=0; $i<10; $i++) 
+for($i=1; $i<=10; $i++) 
 {
      echo"\n\t<tr>"; 
      
-     for($j=0; $j<10; $j++) 
+     for($j=1; $j<=10; $j++) 
      {
           $c = $i * $j;  
           echo "<td>$c</td>";
