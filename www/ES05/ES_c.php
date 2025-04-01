@@ -2,13 +2,11 @@
 require 'functions.php';
 
 session_start(); // Avvia la sessione php.
-$_SESSION['pag_count']++; echo $_SESSION['pag_count']; //TODO: debug only
 
 $email = (isset($_POST['email'])) ? $_POST['email'] : "";
 $password = (isset($_POST['password'])) ? $_POST['password'] : "";
-echo "-".$email."-".$password."-"; //TODO: debug only
 [$retval,$errmsg]=login($email, $password);
-if($retval) {header("location: welcome.php"); die();} 
+if($retval) {header("location: riservata.php"); die();} 
 ?>
  
 <!DOCTYPE html>
