@@ -3,7 +3,7 @@ require("function.php");
 session_start();
 
 if(!isset($_SESSION['userid'])){
-    header('Location: welcome.php');
+    header('Location: ES_c.php');
     die();
 }
 
