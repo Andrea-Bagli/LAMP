@@ -1,5 +1,10 @@
 <?php
 
+// Costanti per la connessione al database
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'ES05_user');
+define('DB_PASSWORD', 'nuova_password');
+define('DB_NAME', 'ES05');
 
 function login($email, $password) {
     if (!isset($email, $password)) 
@@ -8,7 +13,7 @@ function login($email, $password) {
     if ($email == "" || $password == "") 
         return [false, "I campi non possono essere vuoti."];
     
-    $db = mysqli_connect("localhost", "username", "password", "database");
+    $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
     if (!$db) 
         return [false, "Errore di connessione al database."];
     
