@@ -1,4 +1,6 @@
 <?php
+
+
 function login($email, $password) {
     if (!isset($email, $password)) 
         return [false, "Inserire le credenziali."];
