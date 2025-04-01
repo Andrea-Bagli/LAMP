@@ -14,7 +14,7 @@ function login($Username, $password) {
     if (!$db) 
         return [false, "Errore di connessione al database."];
     
-    $sql = "SELECT id, username, password FROM utente WHERE Username='" . $Username . "'";
+    $sql = "SELECT userid, username, password FROM utente WHERE Username='" . $Username . "'";
     $result = mysqli_query($db, $sql);
     
     if ($result) {
