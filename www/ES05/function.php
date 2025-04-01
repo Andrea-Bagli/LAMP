@@ -22,7 +22,7 @@ function login($Username, $password) {
             $row = mysqli_fetch_assoc($result);
             
             if ($row['password'] == $password) { 
-                $_SESSION['userid'] = $row['id'];
+                $_SESSION['userid'] = $row['userid'];
                 $_SESSION['username'] = $row['username'];
                 mysqli_close($db);
                 return [true, "Login riuscito."];
