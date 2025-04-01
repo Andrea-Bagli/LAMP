@@ -6,18 +6,15 @@ define('DB_USERNAME', 'ES05_user');
 define('DB_PASSWORD', 'nuova_password');
 define('DB_NAME', 'ES05');
 
-function login($email, $password) {
-    if (!isset($email, $password)) 
+function login($Username, $password) {
+    if (!isset($Username, $password)) 
         return [false, "Inserire le credenziali."];
-    
-    if ($email == "" || $password == "") 
-        return [false, "I campi non possono essere vuoti."];
     
     $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
     if (!$db) 
         return [false, "Errore di connessione al database."];
     
-    $sql = "SELECT id, username, password FROM members WHERE email='" . $email . "'";
+    $sql = "SELECT id, username, password FROM utente WHERE Username='" . $Username . "'";
     $result = mysqli_query($db, $sql);
     
     if ($result) {
