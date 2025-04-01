@@ -3,8 +3,8 @@ require 'function.php';
 
 session_start(); // Avvia la sessione php.
 
-$Username = (isset($_POST['Username'])) ? $_POST['Username'] : "";
-$password = (isset($_POST['password'])) ? $_POST['password'] : "";
+$Username = (isset($_POST['Username'])) ? $_POST['Username'] : NULL;
+$password = (isset($_POST['password'])) ? $_POST['password'] : NULL;
 [$retval,$errmsg]=login($Username, $password);
 if($retval) {header("location: riservata.php"); die();} 
 ?>
