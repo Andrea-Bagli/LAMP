@@ -15,12 +15,11 @@ if($retval) {header("location: riservata.php"); die();}
 <body>
   <h3>Pagina di login</h3>
   <?=$errmsg?>
-  <form action="login.php" method="post">
+  <form action="ES_c.php" method="post">
     <label>Email <input type="text" name="email" /></label><br />
     <label>Password <input type="password" name="password"/></label><br />
     <input type="submit" value="Login" /><input type="reset" value="Cancel" />
-  </form>
-  <p>Non hai un account? <a href="register.php">Registrati adesso</a>.</p>        
+  </form>       
 </body>
 </html>
 
