@@ -62,6 +62,9 @@ INSERT INTO Artisti (Nome, Nazionalita, Data_Nascita, Data_Morte)
 VALUES ('Sandro Botticelli', 'Italiana', '1445-03-01', '1510-05-17'),
        ('Michelangelo Buonarroti', 'Italiana', '1475-03-06', '1564-02-18');
 
+INSERT INTO Artisti (Nome, Nazionalita, Data_Nascita, Data_Morte)
+VALUES ('Andrea Bagli', 'Italiana', '2006-08-05', '2150-05-17');
+
 INSERT INTO Correnti_Artistiche (Nome)
 VALUES ('Rinascimento'), 
        ('Manierismo');
@@ -116,3 +119,10 @@ FROM Opere_d_Arte o
 JOIN Artisti a ON o.ID_Artista = a.ID_Artista
 JOIN Musei m ON o.ID_Museo = m.ID_Museo
 WHERE a.Nome = 'Sandro Botticelli';
+
+--QUERY 4
+SELECT d.Nome
+FROM Direttori d
+JOIN Musei m ON d.ID_Direttore = m.Direttore
+GROUP BY d.ID_Direttore
+HAVING COUNT(m.ID_Museo) > 1;
