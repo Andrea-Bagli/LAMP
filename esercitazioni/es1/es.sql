@@ -109,3 +109,10 @@ FROM Opere_d_Arte o
 JOIN Artisti a ON o.ID_Artista = a.ID_Artista
 JOIN Musei m ON o.ID_Museo = m.ID_Museo
 GROUP BY a.ID_Artista, m.ID_Museo;
+
+--QUERY 3
+SELECT o.ID_Opera, o.Titolo, m.Nome AS NomeMuseo, o.Tipo, o.Corrente_Artistica, o.Stato_Conservazione, o.Tecnica, o.Dimensioni, o.Materia, o.Peso
+FROM Opere_d_Arte o
+JOIN Artisti a ON o.ID_Artista = a.ID_Artista
+JOIN Musei m ON o.ID_Museo = m.ID_Museo
+WHERE a.Nome = 'Sandro Botticelli';
