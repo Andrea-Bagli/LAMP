@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(!isset($_SESSION['username'])){
-        header("Location: login.php");
+        header("Location: login1.php");
         die();
     }
     echo "<h3>Benvenuto " . $_SESSION['username'] . "</h3>";
