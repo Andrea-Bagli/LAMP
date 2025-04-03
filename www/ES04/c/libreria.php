@@ -34,7 +34,7 @@ function setLink()
     if (checksession()[0]) {
         $link = "<a href='logout.php'>Logout</a>";
     } else {
-        $link = "<a href='login.php'>Login</a>";
+        $link = "<a href='login1.php'>Login</a>";
     }
     return $link;
 }
