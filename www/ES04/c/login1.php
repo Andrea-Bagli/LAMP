@@ -1,6 +1,6 @@
 <?php
 
-require 'loginLib.php';
+require 'libreria.php';
 
 session_start();
 
