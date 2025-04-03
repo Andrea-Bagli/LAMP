@@ -6,10 +6,21 @@ session_start();
 
 checkSession();
 
-login();
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Recupera i dati dal form
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['error'])) {
-    echo "<h3 style='color:red'>" . $_GET['error'] . '</h3>';
+    // Controlla se il login è corretto
+    if (login_check($username, $password)) {
+        // Login riuscito: reindirizza all'area protetta
+        header("Location: riservata.php");
+        exit();
+    } else {
+        // Login fallito, visualizza errore
+        header("Location: login1.php?error=Credenziali non valide.");
+        exit();
+    }
 }
 ?>
 
