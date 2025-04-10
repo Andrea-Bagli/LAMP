@@ -16,6 +16,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('location: riservata.php');
         die();
 }
+else{ 
+    $err_msg="credenziali errate";
+}
 }
 ?>
 
