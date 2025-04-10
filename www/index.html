@@ -1,33 +1,133 @@
 <!-- http://204.216.213.176/inf3php/ES01/ -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagli - Ambiente di sviluppo PHP</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+        .container {
+            width: 300px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h3 {
+            color: #555;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        table a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        table a:hover {
+            color: #388E3C;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
 <body>
-    <h1>Ciao sono Bagli! Benvenuto nel mio ambiente di sviluppo di pagine PHP per gli studenti di 5H! By FB</h1>
-    <br /><br />
-    <h3>ES01 - PHP Hello World</h3>
-    <a href="ES01/">Hello PHP</a><br />
-    <a href="ES01/es01a.php">Tabella pitagorica</a><br />
-    <a href="ES01/es01b.php">Buongiorno,buonasera,buonanotte</a><br />
-    <a href="ES01/es01c.php">triangoli</a><br />
-    <br /><br /><br />
 
+    <div class="container">
+        <h1>Ciao sono Bagli! Benvenuto nel mio ambiente di sviluppo di pagine PHP per gli studenti di 5H! By FB</h1>
+        
+        <table>
+            <tr>
+                <td colspan="2"><h3>ES01 - PHP Hello World</h3></td>
+            </tr>
+            <tr>
+                <td><a href="ES01/">Hello PHP</a></td>
+            </tr>
+            <tr>
+                <td><a href="ES01/es01a.php">Tabella pitagorica</a></td>
+            </tr>
+            <tr>
+                <td><a href="ES01/es01b.php">Buongiorno,buonasera,buonanotte</a></td>
+            </tr>
+            <tr>
+                <td><a href="ES01/es01c.php">Triangoli</a></td>
+            </tr>
 
+            <tr>
+                <td colspan="2"><h3>ES02 - Accesso a pagina riservata</h3></td>
+            </tr>
+            <tr>
+                <td><a href="ES02/index_get_es02a.php">accesso_get</a></td>
+            </tr>
+            <tr>
+                <td><a href="ES02/index_post_es02b.php">accesso_post</a></td>
+            </tr>
+            <tr>
+                <td><a href="ES02/es02c_tabella.php">Tabella</a></td>
+            </tr>
+            <tr>
+                <td><a href="ES05/ES_b.php">Test Connessione</a></td>
+            </tr>
 
+            <tr>
+                <td colspan="2"><h3>ES04 - Gestione sessioni</h3></td>
+            </tr>
+            <tr>
+                <td><a href="ES04/a-b/index.php">ES_a_b</a></td>
+            </tr>
+            <tr>
+                <td><a href="ES04/c/index.php">ES_c</a></td>
+            </tr>
 
-  
-    <h3>ES02 - Accesso a pagina riservata</h3>
+            <tr>
+                <td colspan="2"><h3>ES05 - Login Con PHP e Mysql</h3></td>
+            </tr>
+            <tr>
+                <td><a href="ES05/ES_b.php">Test_Connessione</a></td>
+            </tr>
+            <tr>
+                <td><a href="ES05/welcome.php">Login</a></td>
+            </tr>
+        </table>
+        
+        <div class="footer">
+            <p>By FB - 5H</p>
+        </div>
+    </div>
 
-    <a href="ES02/index_get_es02a.php">accesso_get</a><br />
-    <a href="ES02/index_post_es02b.php">accesso_post</a><br />
-    <a href="ES02/es02c_tabella.php">Tabella</a><br />
-    <a href="ES05/ES_b.php">Test Connessione</a><br />
+</body>
+</html>
 
-    <h3>ES04 - Gestione sessioni</h3>
-    <a href="ES04/a-b/index.php">ES_a_b</a><br />
-    <a href="ES04/c/index.php">ES_c</a><br />
-
-    <h3>ES05 - Login Con PHP e Mysql</h3>
-    <a href="ES05/ES_b.php">Test_Connessione</a><br />
-    <a href="ES05/welcome.php">Login</a><br />
-   
    
    
    
@@ -38,5 +138,3 @@
     <br /><br />
     <h3>ES03 - Form validation</h3>
     <h3>ES04 - Gestione delle sessioni nelle applicazioni web</h3>-->
-
-</body>
