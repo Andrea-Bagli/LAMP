@@ -13,17 +13,17 @@ if (!$conn) {
 }
 
 
-$query = "SHOW TABLES FROM $database";
+$query = "SELECT * FROM utente";
 $result = mysqli_query($conn, $query);
 
 
 if ($result) {
-    echo "<h3>Tabelle presenti nel database <em>$database</em>:</h3>";
-    echo "<ul>";
+    echo "<h3>Tabella:</h3>";
+    echo "<table>"
     while ($row = mysqli_fetch_row($result)) {
-        echo "<li>" . $row[0] . "</li>";
+        echo "<tr>" . $row[0] . "</tr>";
     }
-    echo "</ul>";
+    echo "</table>";
 } else {
     echo "Errore nella query: " . mysqli_error($conn);
 }
