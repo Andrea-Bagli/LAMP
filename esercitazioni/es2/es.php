@@ -19,9 +19,13 @@ $result = mysqli_query($conn, $query);
 
 if ($result) {
     echo "<h3>Tabella:</h3>";
-    echo "<table>"
+    echo "<table>";
     while ($row = mysqli_fetch_row($result)) {
-        echo "<tr>" . $row[0] . "</tr>";
+        echo "<tr>";
+        foreach ($row as $key => $value) {
+            echo "<td>".$value . "</td>";
+        }
+        echo "</tr>";
     }
     echo "</table>";
 } else {
