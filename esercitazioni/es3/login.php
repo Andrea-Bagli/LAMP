@@ -1,6 +1,6 @@
 <?php
 // Connessione al database
-$connessione = mysqli_connect("localhost", "root", "", "scuola");
+$connessione = mysqli_connect("localhost", "root", "menigay", "scuola");
 
 // Controllo se la connessione funziona
 if (!$connessione) {
